@@ -86,7 +86,7 @@ const Home: NextPage = () => {
         <h1 className={styles.headerText}>Purple Cow To-do List</h1>
         <a
           className={styles.link}
-          href=""
+          href="https://github.com/neilvmorrison/todo-test"
           target="_blank"
           rel="noreferrer noopener"
         >

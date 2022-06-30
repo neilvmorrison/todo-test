@@ -12,18 +12,24 @@ type TodoTileProps = {
   deleteTodo: (id: string) => Promise<void>;
 };
 
+type RefProps = {
+  onClick?: () => void;
+};
+
 export default function TodoTile({
   todo,
   updateTodo,
   deleteTodo,
 }: TodoTileProps) {
-  const CustomInput = forwardRef(({ onClick }, ref) => (
-    <button className={styles.date} ref={ref} onClick={onClick}>
-      {todo.due_date
-        ? new Date(todo.due_date).toDateString()
-        : "Add a due date"}
-    </button>
-  ));
+  const CustomInput = forwardRef<HTMLButtonElement, RefProps>(
+    ({ onClick }, ref) => (
+      <button className={styles.date} ref={ref} onClick={onClick}>
+        {todo.due_date
+          ? new Date(todo.due_date).toDateString()
+          : "Add a due date"}
+      </button>
+    )
+  );
   CustomInput.displayName = "CustomInput";
 
   async function toggleDone(): Promise<void> {
