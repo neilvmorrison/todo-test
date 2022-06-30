@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #7455ab;
+  --color-secondary: #f2a93b;
+
+  --shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+
+  --text-regular: rgba(0, 0, 0, 0.87);
+  --text-light: rgba(0, 0, 0, 0.55);
+  --text-extra-light: rgba(0, 0, 0, 0.35);
+
+  --top-bar-height: 55px;
+
+  --border: 1px solid rgba(0, 0, 0, 0.08);
+  --radius: 8px;
+
+  --tablet: 768px;
+  --desktop: 1080px;
+}

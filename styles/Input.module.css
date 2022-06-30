@@ -1,0 +1,22 @@
+.input {
+  box-shadow: var(--shadow);
+  background: #fff;
+  padding: 16px 24px;
+  color: var(--text-regular);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 24px;
+  width: calc(100% - 48px);
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .input {
+    width: 640px;
+    margin: 0;
+  }
+}

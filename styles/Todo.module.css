@@ -1,0 +1,72 @@
+.container {
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  position: relative;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.deleteIcon {
+  position: absolute;
+  top: 12px;
+  left: 0%;
+  display: none;
+}
+
+.todoTitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-regular);
+  margin-bottom: 8px;
+}
+
+.checkbox {
+  margin: 8px 48px 0 0;
+  line-height: 24px;
+  appearance: none;
+}
+
+.checkbox::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  height: 16px;
+  width: 16px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+}
+
+.checkbox:checked::after {
+  content: "✔";
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.date {
+  color: var(--text-light);
+  font-size: 12px;
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  padding: none;
+}
+
+.date:hover {
+  text-decoration: underline;
+}
